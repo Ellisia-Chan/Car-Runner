@@ -15,14 +15,14 @@ public class ObstacleMovement : MonoBehaviour {
     private void FixedUpdate() {
         if (GameManager.Instance.IsGamePlaying()) {
             rb.velocity = new Vector3(0, 0, -obstacleSpeed);
-        } /*else {
+        } else {
             if (obstacleSpeed > 0) {
                 obstacleSpeed -= speedDeclerationRate * Time.deltaTime;
             }
 
             obstacleSpeed = Mathf.Max(obstacleSpeed, 0);
             rb.velocity = new Vector3 (0, 0, -obstacleSpeed);
-        }*/
+        }
     }
 
     public void IncreaseObstacleSpeed() {

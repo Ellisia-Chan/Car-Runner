@@ -14,7 +14,8 @@ public class ObstacleDestroyManager : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (!other.gameObject.GetComponent<Player>()) {
-            ObstacleSORef obstacleComponent = other.gameObject.GetComponent<ObstacleSORef>();
+            ObstacleSORef obstacleComponent = other.transform.parent.GetComponent<ObstacleSORef>();
+            Debug.Log(obstacleComponent);
 
             if (obstacleComponent != null) {
                 ObstacleSO obstacleSO = obstacleComponent.obstacleSO;

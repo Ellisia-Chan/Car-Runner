@@ -12,4 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8f5904e46e6b814bb1ab28fa51b2670, type: 3}
   m_Name: ObstacleListSO
   m_EditorClassIdentifier: 
-  obstaclesSO: []
+  obstaclesSO:
+  - {fileID: 11400000, guid: 2a0164cccaab5eb4e8ace33899ac958c, type: 2}
+  - {fileID: 11400000, guid: 5e6c1271240500b42bcb6626938ea0b4, type: 2}
+  - {fileID: 11400000, guid: 1b1e55718bba5e94b993cda14de9200d, type: 2}
+  - {fileID: 11400000, guid: 7d59f9cd33d68d24daa10c5ce4879b93, type: 2}
+  - {fileID: 11400000, guid: 13081bd7e930a3047a34b696596d1eee, type: 2}
+  - {fileID: 11400000, guid: add6aa58170582645af845895e890f9e, type: 2}
+  - {fileID: 11400000, guid: 3e44a51fa670a4445a1ea5df0400cd39, type: 2}
+  - {fileID: 11400000, guid: dd948c2615c4c6942896dd5eae2bc549, type: 2}
