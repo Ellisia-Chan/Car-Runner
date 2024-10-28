@@ -107,7 +107,6 @@ public class Player : MonoBehaviour {
         } else {
             ResetRotation();
         }
-
     }
 
     private void ResetRotation() {

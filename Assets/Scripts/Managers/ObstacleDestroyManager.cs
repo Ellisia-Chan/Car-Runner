@@ -14,7 +14,16 @@ public class ObstacleDestroyManager : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (!other.gameObject.GetComponent<Player>()) {
-            Destroy(other.transform.parent.gameObject);
+            ObstacleSORef obstacleComponent = other.gameObject.GetComponent<ObstacleSORef>();
+
+            if (obstacleComponent != null) {
+                ObstacleSO obstacleSO = obstacleComponent.obstacleSO;
+
+                if (obstacleSO != null)
+                {
+                    ObstacleSpawner.Instance.ReturnObstacleToPool(other.transform.gameObject, obstacleSO);
+                }
+            }
         }
     }
 }
