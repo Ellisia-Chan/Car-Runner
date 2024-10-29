@@ -14,14 +14,14 @@ public class ObstacleMovement : MonoBehaviour {
 
     private void FixedUpdate() {
         if (GameManager.Instance.IsGamePlaying()) {
-            rb.velocity = new Vector3(0, 0, -obstacleSpeed);
+            rb.linearVelocity = new Vector3(0, 0, -obstacleSpeed);
         } else {
             if (obstacleSpeed > 0) {
                 obstacleSpeed -= speedDeclerationRate * Time.deltaTime;
             }
 
             obstacleSpeed = Mathf.Max(obstacleSpeed, 0);
-            rb.velocity = new Vector3 (0, 0, -obstacleSpeed);
+            rb.linearVelocity = new Vector3 (0, 0, -obstacleSpeed);
         }
     }
 

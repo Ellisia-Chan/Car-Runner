@@ -52,7 +52,7 @@ public class Player : MonoBehaviour {
 
     private void HandleMovement() {
         Vector3 movement3D = new Vector3(movement.x, 0, movement.y);
-        rb.velocity = new Vector3(movement3D.x * moveSpeed, rb.velocity.y, movement3D.z * moveSpeed);
+        rb.linearVelocity = new Vector3(movement3D.x * moveSpeed, rb.linearVelocity.y, movement3D.z * moveSpeed);
     }
 
     private void HandleDash() {
